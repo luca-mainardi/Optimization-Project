@@ -1,17 +1,19 @@
+import csv
+
+# pylint: disable=import-error
 import gurobipy as gp
 from gurobipy import GRB
-import csv
 
 # _____________________________________ Constants _____________________________________
 
-STATE = "TX"
+STATE = "RI"
 UPPER_BOUND_PCT = 0.65
 
 # _____________________________________ Load the data _____________________________________
 
 # Distances between nodes matrix
 distances = []
-with open(f"data/{STATE}/{STATE}_distances.csv", "r") as file:
+with open(f"data/{STATE}/{STATE}_distances.csv", "r", encoding="utf-8") as file:
     reader = csv.reader(file)
     next(reader, None)  # Skip the header
     distances = [list(map(int, row[1:])) for row in reader]  # Read line skipping NodeID
@@ -26,7 +28,7 @@ districts_count = 0
 
 # Adjacency matrix
 adjacency_matrix = [[0 for _ in range(nodes_count)] for _ in range(nodes_count)]
-with open(f"data/{STATE}/{STATE}.dimacs", "r") as file:
+with open(f"data/{STATE}/{STATE}.dimacs", "r", encoding="utf-8") as file:
     for line in file:
         if line.startswith("e"):
             _, node1, node2 = line.split()
@@ -44,7 +46,7 @@ print(f"Districts count: {districts_count}")
 # Population vector
 population = []
 total_population = 0
-with open(f"data/{STATE}/{STATE}.population", "r") as file:
+with open(f"data/{STATE}/{STATE}.population", "r", encoding="utf-8") as file:
     total_population = int(file.readline().split()[-1])
     for line in file:
         population.append(int(line.split()[1]))
@@ -188,7 +190,7 @@ if model.status == GRB.OPTIMAL:
     # Print values of decision variables
     for v in model.getVars():
         if v.VarName.startswith("X"):
-            print(f"{v.varName} = {v.x}")
+            print(f"{v.VarName} = {v.X}")
     # Print objective value
     print(f"Objective value = {model.objVal}")
 else:
