@@ -6,8 +6,8 @@ from gurobipy import GRB
 
 # _____________________________________ Constants _____________________________________
 
-STATE = "RI"
-UPPER_BOUND_PCT = 0.65
+STATE = "TX"
+THRESHOLD_PCT = 0.1
 
 # _____________________________________ Load the data _____________________________________
 
@@ -41,6 +41,7 @@ with open(f"data/{STATE}/{STATE}.dimacs", "r", encoding="utf-8") as file:
             districts_count = int(d_count)
 
 print(f"Adjacency matrix:\n{adjacency_matrix}")
+districts_count = 4
 print(f"Districts count: {districts_count}")
 
 # Population vector
@@ -66,10 +67,12 @@ n = districts_count  # Number of districts
 d = distances  # Distance matrix (m x m)
 p = population  # Population vector of length m
 A = adjacency_matrix  # Adjacency matrix (m x m)
-a = 0  # Lower bound constraint on population difference
-b = (
-    total_population * UPPER_BOUND_PCT
-)  # Upper bound constraint on population difference
+a = (total_population / districts_count) - (
+    total_population / districts_count
+) * THRESHOLD_PCT / 2  # Lower bound constraint on population of districts
+b = (total_population / districts_count) + (
+    total_population / districts_count
+) * THRESHOLD_PCT / 2  # Upper bound constraint on population of districts
 
 # Decision variables
 X = {}
@@ -181,7 +184,12 @@ for j in range(n):
     model.addConstr(a <= gp.quicksum(p[i] * X[i, j] for i in range(m)))
     model.addConstr(gp.quicksum(p[i] * X[i, j] for i in range(m)) <= b)
 
+# Print number of variables and constraints
+print("Number of variables: ", model.NumVars)
+print("Number of constraints: ", model.NumConstrs)
+
 # Optimize model
+model.Params.MIPGap = 0.0
 model.optimize()
 
 # Print optimal solution
