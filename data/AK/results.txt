@@ -1,0 +1,256 @@
+Model fingerprint: 0x5aa07e0f
+Variable types: 160716 continuous, 31329 integer (31329 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 2e+05]
+  Objective range  [5e+01, 3e+11]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 4575 rows and 5465 columns
+Presolve time: 3.94s
+Presolved: 89767 rows, 186580 columns, 682189 nonzeros
+Variable types: 155251 continuous, 31329 integer (31329 binary)
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 0.20s
+
+Barrier statistics:
+ Dense cols : 177
+ AA' NZ     : 6.866e+05
+ Factor NZ  : 2.915e+06 (roughly 140 MB of memory)
+ Factor Ops : 1.883e+08 (less than 1 second per iteration)
+ Threads    : 5
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   2.66422365e+14 -1.42932602e+14  5.69e+04 0.00e+00  1.31e+10     6s
+   1   6.69850992e+13 -1.13756031e+14  1.37e+04 4.77e-07  3.28e+09     6s
+   2   9.77776964e+12 -7.48517468e+13  1.94e+03 3.47e+00  5.42e+08     6s
+   3   1.38861303e+12 -1.08330323e+13  2.23e+02 2.38e-07  5.92e+07     7s
+   4   3.99276532e+11 -2.51389314e+12  2.97e+01 2.38e-07  1.03e+07     7s
+   5   2.79067725e+11 -7.57849774e+11  1.23e+01 4.77e-07  3.64e+06     7s
+   6   2.26326306e+11 -3.11088764e+11  5.98e+00 2.38e-07  1.74e+06     7s
+   7   2.08965313e+11 -1.46418274e+11  4.28e+00 2.38e-07  1.12e+06     7s
+   8   1.79181975e+11 -7.15467017e+10  2.00e+00 1.19e-07  7.00e+05     7s
+   9   1.71686416e+11 -2.87713323e+10  1.61e+00 1.01e-02  5.49e+05     7s
+  10   1.50442227e+11  7.42815785e+09  7.76e-01 4.40e-02  3.67e+05     7s
+  11   1.35970857e+11  3.15334291e+10  4.40e-01 3.05e-02  2.60e+05     7s
+  12   1.26671992e+11  3.83695806e+10  2.51e-01 2.97e-02  2.14e+05     8s
+  13   1.24261874e+11  4.54024608e+10  2.05e-01 2.42e-02  1.90e+05     8s
+  14   1.19958453e+11  6.35205455e+10  1.30e-01 2.23e-02  1.35e+05     8s
+  15   1.16558555e+11  7.82019880e+10  8.37e-02 1.52e-02  9.14e+04     8s
+  16   1.12204739e+11  8.60418373e+10  4.15e-02 1.09e-02  6.17e+04     8s
+  17   1.10683284e+11  8.94183903e+10  3.11e-02 9.09e-03  5.01e+04     8s
+  18   1.09731717e+11  9.06597579e+10  2.53e-02 8.36e-03  4.48e+04     8s
+  19   1.08808347e+11  9.35043653e+10  1.98e-02 6.68e-03  3.60e+04     9s
+  20   1.07902023e+11  9.62317494e+10  1.49e-02 4.97e-03  2.74e+04     9s
+  21   1.06998016e+11  9.73230709e+10  1.05e-02 4.37e-03  2.27e+04     9s
+  22   1.06373107e+11  9.96832416e+10  7.71e-03 2.96e-03  1.57e+04     9s
+  23   1.05152510e+11  1.01236851e+11  2.69e-03 1.97e-03  9.13e+03    10s
+  24   1.04819741e+11  1.02848663e+11  1.55e-03 9.04e-04  4.60e+03    10s
+  25   1.04592594e+11  1.03399858e+11  8.73e-04 5.43e-04  2.78e+03    10s
+  26   1.04469869e+11  1.03732216e+11  5.59e-04 3.12e-04  1.72e+03    10s
+  27   1.04335055e+11  1.04004201e+11  2.44e-04 1.28e-04  7.74e+02    10s
+  28   1.04291634e+11  1.04096736e+11  1.57e-04 6.58e-05  4.57e+02    10s
+  29   1.04277386e+11  1.04137019e+11  1.41e-04 4.03e-05  3.30e+02    10s
+  30   1.04265547e+11  1.04152487e+11  1.42e-04 3.01e-05  2.66e+02    11s
+  31   1.04252204e+11  1.04166154e+11  1.28e-04 2.12e-05  2.02e+02    11s
+  32   1.04236084e+11  1.04172308e+11  1.31e-04 1.70e-05  1.50e+02    11s
+  33   1.04222244e+11  1.04193714e+11  1.01e-04 1.05e-06  6.77e+01    11s
+  34   1.04218094e+11  1.04195460e+11  1.22e-04 6.25e-07  5.38e+01    12s
+  35   1.04203285e+11  1.04196523e+11  1.72e-04 5.23e-07  1.59e+01    12s
+  36   1.04199806e+11  1.04196999e+11  9.11e-05 2.38e-07  6.68e+00    12s
+  37   1.04198801e+11  1.04197108e+11  5.79e-05 2.38e-07  4.05e+00    13s
+  38   1.04197825e+11  1.04197162e+11  2.06e-04 7.64e-07  1.64e+00    13s
+  39   1.04197462e+11  1.04197165e+11  1.08e-04 2.70e-07  7.46e-01    13s
+  40   1.04197176e+11  1.04197176e+11  2.52e-07 9.63e-07  5.21e-04    13s
+  41   1.04197176e+11  1.04197176e+11  3.10e-09 2.92e-07  2.64e-09    13s
+
+Barrier solved model in 41 iterations and 13.41 seconds (9.44 work units)
+Optimal objective 1.04197176e+11
+
+
+Root crossover log...
+
+   88898 DPushes remaining with DInf 0.0000000e+00                13s
+       0 DPushes remaining with DInf 0.0000000e+00                14s
+
+     554 PPushes remaining with PInf 0.0000000e+00                14s
+       0 PPushes remaining with PInf 0.0000000e+00                14s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 8.3655872e-06     14s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   50570    1.0419718e+11   0.000000e+00   0.000000e+00     14s
+Concurrent spin time: 0.82s
+
+Solved with barrier
+   50570    1.0419718e+11   0.000000e+00   0.000000e+00     15s
+
+Root relaxation: objective 1.041972e+11, 50570 iterations, 10.08 seconds (5.38 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.0420e+11    0    6          - 1.0420e+11      -     -   15s
+H    0     0                    1.043510e+11 1.0420e+11  0.15%     -   15s
+H    0     0                    1.042437e+11 1.0420e+11  0.04%     -   16s
+     0     0 1.0420e+11    0    8 1.0424e+11 1.0420e+11  0.04%     -   18s
+     0     0 1.0420e+11    0    6 1.0424e+11 1.0420e+11  0.04%     -   19s
+     0     0 1.0420e+11    0   87 1.0424e+11 1.0420e+11  0.04%     -   21s
+     0     0 1.0420e+11    0   17 1.0424e+11 1.0420e+11  0.04%     -   22s
+     0     0 1.0420e+11    0  104 1.0424e+11 1.0420e+11  0.04%     -   23s
+     0     0 1.0420e+11    0   99 1.0424e+11 1.0420e+11  0.04%     -   23s
+     0     0 1.0421e+11    0  101 1.0424e+11 1.0421e+11  0.03%     -   23s
+     0     0 1.0421e+11    0  104 1.0424e+11 1.0421e+11  0.03%     -   24s
+     0     0 1.0421e+11    0  147 1.0424e+11 1.0421e+11  0.03%     -   25s
+     0     0 1.0421e+11    0  151 1.0424e+11 1.0421e+11  0.03%     -   25s
+     0     0 1.0421e+11    0  155 1.0424e+11 1.0421e+11  0.03%     -   25s
+     0     0 1.0422e+11    0  160 1.0424e+11 1.0422e+11  0.03%     -   27s
+     0     0 1.0422e+11    0  154 1.0424e+11 1.0422e+11  0.03%     -   28s
+     0     0 1.0422e+11    0  152 1.0424e+11 1.0422e+11  0.02%     -   28s
+     0     0 1.0422e+11    0  157 1.0424e+11 1.0422e+11  0.02%     -   28s
+     0     0 1.0422e+11    0  157 1.0424e+11 1.0422e+11  0.02%     -   28s
+     0     0 1.0422e+11    0  151 1.0424e+11 1.0422e+11  0.02%     -   28s
+     0     0 1.0422e+11    0  151 1.0424e+11 1.0422e+11  0.02%     -   29s
+     0     0 1.0422e+11    0  157 1.0424e+11 1.0422e+11  0.02%     -   29s
+     0     0 1.0422e+11    0  160 1.0424e+11 1.0422e+11  0.02%     -   29s
+     0     0 1.0422e+11    0  161 1.0424e+11 1.0422e+11  0.02%     -   29s
+     0     0 1.0422e+11    0  166 1.0424e+11 1.0422e+11  0.02%     -   29s
+     0     0 1.0422e+11    0  166 1.0424e+11 1.0422e+11  0.02%     -   30s
+     0     0 1.0422e+11    0  158 1.0424e+11 1.0422e+11  0.02%     -   30s
+     0     0 1.0422e+11    0  158 1.0424e+11 1.0422e+11  0.02%     -   30s
+     0     0 1.0422e+11    0  156 1.0424e+11 1.0422e+11  0.02%     -   31s
+     0     0 1.0422e+11    0  157 1.0424e+11 1.0422e+11  0.02%     -   31s
+     0     0 1.0422e+11    0  159 1.0424e+11 1.0422e+11  0.02%     -   31s
+     0     0 1.0422e+11    0  160 1.0424e+11 1.0422e+11  0.02%     -   32s
+     0     0 1.0422e+11    0  163 1.0424e+11 1.0422e+11  0.02%     -   32s
+     0     0 1.0422e+11    0  244 1.0424e+11 1.0422e+11  0.02%     -   33s
+     0     0 1.0422e+11    0  247 1.0424e+11 1.0422e+11  0.02%     -   33s
+     0     0 1.0422e+11    0  247 1.0424e+11 1.0422e+11  0.02%     -   33s
+     0     0 1.0423e+11    0  207 1.0424e+11 1.0423e+11  0.02%     -   33s
+     0     0 1.0423e+11    0  208 1.0424e+11 1.0423e+11  0.02%     -   33s
+     0     0 1.0423e+11    0  249 1.0424e+11 1.0423e+11  0.02%     -   33s
+     0     0 1.0423e+11    0  245 1.0424e+11 1.0423e+11  0.02%     -   34s
+     0     0 1.0423e+11    0  245 1.0424e+11 1.0423e+11  0.02%     -   34s
+     0     0 1.0423e+11    0  208 1.0424e+11 1.0423e+11  0.02%     -   34s
+     0     0 1.0423e+11    0  208 1.0424e+11 1.0423e+11  0.02%     -   34s
+     0     0 1.0423e+11    0  209 1.0424e+11 1.0423e+11  0.02%     -   34s
+     0     0 1.0423e+11    0  210 1.0424e+11 1.0423e+11  0.02%     -   35s
+     0     0 1.0423e+11    0  209 1.0424e+11 1.0423e+11  0.02%     -   35s
+     0     0 1.0423e+11    0  209 1.0424e+11 1.0423e+11  0.02%     -   35s
+     0     0 1.0423e+11    0  243 1.0424e+11 1.0423e+11  0.02%     -   36s
+     0     0 1.0423e+11    0  209 1.0424e+11 1.0423e+11  0.01%     -   36s
+     0     0 1.0423e+11    0  201 1.0424e+11 1.0423e+11  0.01%     -   37s
+     0     0 1.0423e+11    0  160 1.0424e+11 1.0423e+11  0.01%     -   37s
+     0     0 1.0423e+11    0  204 1.0424e+11 1.0423e+11  0.01%     -   37s
+     0     0 1.0423e+11    0  209 1.0424e+11 1.0423e+11  0.01%     -   37s
+     0     0 1.0423e+11    0  161 1.0424e+11 1.0423e+11  0.01%     -   38s
+     0     0 1.0423e+11    0  162 1.0424e+11 1.0423e+11  0.01%     -   38s
+     0     0 1.0423e+11    0  162 1.0424e+11 1.0423e+11  0.01%     -   38s
+     0     0 1.0423e+11    0  163 1.0424e+11 1.0423e+11  0.01%     -   38s
+     0     0 1.0423e+11    0  164 1.0424e+11 1.0423e+11  0.01%     -   39s
+     0     0 1.0423e+11    0  164 1.0424e+11 1.0423e+11  0.01%     -   39s
+     0     0 1.0423e+11    0  164 1.0424e+11 1.0423e+11  0.01%     -   39s
+     0     0 1.0423e+11    0  162 1.0424e+11 1.0423e+11  0.01%     -   40s
+     0     0 1.0423e+11    0    5 1.0424e+11 1.0423e+11  0.01%     -   45s
+     0     0 1.0423e+11    0   74 1.0424e+11 1.0423e+11  0.01%     -   46s
+     0     0 1.0423e+11    0  114 1.0424e+11 1.0423e+11  0.01%     -   46s
+     0     0 1.0423e+11    0  114 1.0424e+11 1.0423e+11  0.01%     -   46s
+     0     0 1.0423e+11    0  121 1.0424e+11 1.0423e+11  0.01%     -   46s
+     0     0 1.0423e+11    0  122 1.0424e+11 1.0423e+11  0.01%     -   47s
+     0     0 1.0423e+11    0  123 1.0424e+11 1.0423e+11  0.01%     -   47s
+     0     0 1.0423e+11    0  128 1.0424e+11 1.0423e+11  0.01%     -   47s
+     0     0 1.0423e+11    0  128 1.0424e+11 1.0423e+11  0.01%     -   47s
+     0     0 1.0423e+11    0  127 1.0424e+11 1.0423e+11  0.01%     -   47s
+     0     0 1.0423e+11    0  129 1.0424e+11 1.0423e+11  0.01%     -   47s
+     0     0 1.0423e+11    0  131 1.0424e+11 1.0423e+11  0.01%     -   47s
+     0     0 1.0423e+11    0  131 1.0424e+11 1.0423e+11  0.01%     -   47s
+     0     0 1.0423e+11    0  130 1.0424e+11 1.0423e+11  0.01%     -   48s
+     0     0 1.0423e+11    0  131 1.0424e+11 1.0423e+11  0.01%     -   48s
+     0     0 1.0423e+11    0  132 1.0424e+11 1.0423e+11  0.01%     -   48s
+     0     0 1.0423e+11    0  131 1.0424e+11 1.0423e+11  0.01%     -   49s
+     0     0 1.0423e+11    0  128 1.0424e+11 1.0423e+11  0.01%     -   49s
+     0     0 1.0423e+11    0  128 1.0424e+11 1.0423e+11  0.01%     -   49s
+     0     0 1.0423e+11    0  128 1.0424e+11 1.0423e+11  0.01%     -   49s
+     0     0 1.0423e+11    0  128 1.0424e+11 1.0423e+11  0.01%     -   49s
+     0     0 1.0423e+11    0  127 1.0424e+11 1.0423e+11  0.01%     -   49s
+     0     0 1.0423e+11    0  129 1.0424e+11 1.0423e+11  0.01%     -   50s
+     0     0 1.0423e+11    0  130 1.0424e+11 1.0423e+11  0.01%     -   50s
+     0     0 1.0423e+11    0  130 1.0424e+11 1.0423e+11  0.01%     -   50s
+     0     0 1.0423e+11    0  131 1.0424e+11 1.0423e+11  0.01%     -   50s
+     0     0 1.0423e+11    0  131 1.0424e+11 1.0423e+11  0.01%     -   50s
+     0     0 1.0423e+11    0    5 1.0424e+11 1.0423e+11  0.01%     -   52s
+     0     0 1.0423e+11    0  102 1.0424e+11 1.0423e+11  0.01%     -   53s
+     0     0 1.0423e+11    0  117 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0  142 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0   80 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0  114 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0  116 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0  115 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0  119 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0  118 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0  121 1.0424e+11 1.0423e+11  0.01%     -   54s
+     0     0 1.0423e+11    0  121 1.0424e+11 1.0423e+11  0.01%     -   55s
+     0     0 1.0423e+11    0  123 1.0424e+11 1.0423e+11  0.01%     -   55s
+     0     0 1.0424e+11    0  121 1.0424e+11 1.0424e+11  0.01%     -   56s
+     0     0 1.0424e+11    0  121 1.0424e+11 1.0424e+11  0.01%     -   56s
+     0     0 1.0424e+11    0  120 1.0424e+11 1.0424e+11  0.01%     -   56s
+     0     0 1.0424e+11    0  122 1.0424e+11 1.0424e+11  0.01%     -   56s
+     0     0 1.0424e+11    0  121 1.0424e+11 1.0424e+11  0.01%     -   56s
+     0     0 1.0424e+11    0  121 1.0424e+11 1.0424e+11  0.01%     -   56s
+     0     0 1.0424e+11    0  123 1.0424e+11 1.0424e+11  0.01%     -   56s
+     0     0 1.0424e+11    0  123 1.0424e+11 1.0424e+11  0.01%     -   56s
+     0     0 1.0424e+11    0  123 1.0424e+11 1.0424e+11  0.01%     -   57s
+     0     0 1.0424e+11    0  126 1.0424e+11 1.0424e+11  0.01%     -   57s
+     0     0 1.0424e+11    0  126 1.0424e+11 1.0424e+11  0.01%     -   57s
+     0     0 1.0424e+11    0  122 1.0424e+11 1.0424e+11  0.01%     -   57s
+     0     0 1.0424e+11    0  125 1.0424e+11 1.0424e+11  0.01%     -   57s
+     0     0 1.0424e+11    0  150 1.0424e+11 1.0424e+11  0.01%     -   57s
+     0     0 1.0424e+11    0  150 1.0424e+11 1.0424e+11  0.01%     -   57s
+     0     0 1.0424e+11    0  153 1.0424e+11 1.0424e+11  0.01%     -   58s
+     0     0 1.0424e+11    0  152 1.0424e+11 1.0424e+11  0.01%     -   58s
+     0     0 1.0424e+11    0  157 1.0424e+11 1.0424e+11  0.01%     -   58s
+     0     0 1.0424e+11    0  157 1.0424e+11 1.0424e+11  0.01%     -   58s
+     0     0 1.0424e+11    0  157 1.0424e+11 1.0424e+11  0.01%     -   58s
+     0     0 1.0424e+11    0  152 1.0424e+11 1.0424e+11  0.01%     -   58s
+     0     0 1.0424e+11    0  152 1.0424e+11 1.0424e+11  0.01%     -   59s
+     0     0 1.0424e+11    0  152 1.0424e+11 1.0424e+11  0.01%     -   59s
+     0     0 1.0424e+11    0  152 1.0424e+11 1.0424e+11  0.01%     -   59s
+     0     2 1.0424e+11    0  152 1.0424e+11 1.0424e+11  0.01%     -   59s
+     1     3 1.0424e+11    1  177 1.0424e+11 1.0424e+11  0.01%   291   60s
+
+Cutting planes:
+  Cover: 14
+  Implied bound: 1
+  Clique: 11
+  MIR: 24
+  StrongCG: 9
+  Flow cover: 39
+  GUB cover: 1
+  Zero half: 1
+  RLT: 3
+  BQP: 1
+
+Explored 232 nodes (96789 simplex iterations) in 62.36 seconds (38.37 work units)
+Thread count was 16 (of 16 available processors)
+
+Solution count 2: 1.04244e+11 1.04351e+11 
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 1.042437226780e+11, best bound 1.042437226780e+11, gap 0.0000%
+
+
+The moment of inertia objective is 1008451630096.0
+District 0 has population 7051040 and contains counties [{'population': 97216}, {'population': 1290188}, {'population': 17478}, {'population': 45883}, {'population': 24435}, {'population': 241067}, {'population': 11374}, {'population': 172706}, {'population': 19653}, {'population': 161501}, {'population': 36255}, {'population': 41570}, {'population': 20106}, {'population': 14988}, {'population': 31047}, {'population': 68755}, {'population': 7012}, {'population': 11335}, {'population': 6741}, {'population': 14710}, {'population': 35805}, {'population': 17642}, {'population': 30167}, {'population': 421017}, {'population': 870781}, {'population': 20164}, {'population': 353178}, {'population': 38891}, {'population': 31040}, {'population': 23830}, {'population': 44279}, {'population': 3129}, {'population': 57887}, {'population': 267114}, {'population': 8615}, {'population': 9670}, {'population': 20557}, {'population': 9831}, {'population': 7076}, {'population': 4838}, {'population': 600}, {'population': 13889}, {'population': 65920}, {'population': 20851}, {'population': 350}, {'population': 6664}, {'population': 18385}, {'population': 48981}, {'population': 50748}, {'population': 91319}, {'population': 49753}, {'population': 2009324}, {'population': 24564}, {'population': 19824}, {'population': 20337}]
+District 1 has population 7522159 and contains counties [{'population': 24754}, {'population': 12217}, {'population': 35662}, {'population': 99956}, {'population': 1064465}, {'population': 50088}, {'population': 135543}, {'population': 5230}, {'population': 233849}, {'population': 16757}, {'population': 16968}, {'population': 22146}, {'population': 15719}, {'population': 13455}, {'population': 52624}, {'population': 192455}, {'population': 82150}, {'population': 19435}, {'population': 35874}, {'population': 41668}, {'population': 906422}, {'population': 2613539}, {'population': 145310}, {'population': 107819}, {'population': 36787}, {'population': 59541}, {'population': 12164}, {'population': 50412}, {'population': 57922}, {'population': 233479}, {'population': 76400}, {'population': 13602}, {'population': 22066}, {'population': 52214}, {'population': 86395}, {'population': 64653}, {'population': 260579}, {'population': 124239}, {'population': 40892}, {'population': 68839}, {'population': 12464}, {'population': 44843}, {'population': 9725}, {'population': 11973}, {'population': 22491}, {'population': 24022}, {'population': 7918}, {'population': 31247}, {'population': 10359}, {'population': 11587}, {'population': 92893}, {'population': 28454}, {'population': 9894}]
+District 2 has population 6923097 and contains counties [{'population': 609017}, {'population': 370647}, {'population': 49130}, {'population': 34860}, {'population': 5237}, {'population': 1372}, {'population': 1116}, {'population': 8990}, {'population': 631}, {'population': 20617}, {'population': 21358}, {'population': 5807}, {'population': 827}, {'population': 5285}, {'population': 38095}, {'population': 13708}, {'population': 13594}, {'population': 7630}, {'population': 5730}, {'population': 17725}, {'population': 7684}, {'population': 4456}, {'population': 26725}, {'population': 52598}, {'population': 4286}, {'population': 21243}, {'population': 3953}, {'population': 68632}, {'population': 19965}, {'population': 148222}, {'population': 2110640}, {'population': 8472}, {'population': 179927}, {'population': 61598}, {'population': 28409}, {'population': 9205}, {'population': 18235}, {'population': 47586}, {'population': 760}, {'population': 3098}, {'population': 3372}, {'population': 1422}, {'population': 1758}, {'population': 118525}, {'population': 2782}, {'population': 5382}, {'population': 3202}, {'population': 865657}, {'population': 1996}, {'population': 2188}, {'population': 19663}, {'population': 143208}, {'population': 5416}, {'population': 3672}, {'population': 1245}, {'population': 3105}, {'population': 14738}, {'population': 9900}, {'population': 1848}, {'population': 140753}, {'population': 3258}, {'population': 1435}, {'population': 6971}, {'population': 18583}, {'population': 7371}, {'population': 21227}, {'population': 18610}, {'population': 169983}, {'population': 165171}, {'population': 21598}, {'population': 7791}, {'population': 42545}, {'population': 9869}, {'population': 2758}, {'population': 21627}, {'population': 83093}, {'population': 8222}, {'population': 12456}, {'population': 5596}, {'population': 11831}, {'population': 21537}, {'population': 310639}, {'population': 2547}, {'population': 13045}, {'population': 5133}, {'population': 1770}, {'population': 5402}, {'population': 5816}, {'population': 32522}, {'population': 3308}, {'population': 17867}, {'population': 9101}, {'population': 11644}, {'population': 4675}, {'population': 4990}, {'population': 3059}, {'population': 10015}, {'population': 3382}, {'population': 14748}, {'population': 64}, {'population': 15193}, {'population': 1513}, {'population': 120003}, {'population': 2451}, {'population': 3385}, {'population': 3303}, {'population': 3285}, {'population': 16932}, {'population': 753}, {'population': 12887}, {'population': 129350}, {'population': 3465}, {'population': 3549}, {'population': 1095}, {'population': 8560}, {'population': 10218}, {'population': 2652}, {'population': 6664}, {'population': 2825}, {'population': 6904}, {'population': 7694}, {'population': 7115}, {'population': 1380}, {'population': 9546}, {'population': 6131}, {'population': 1440}, {'population': 3353}, {'population': 1962}, {'population': 265}, {'population': 1063}]
+District 3 has population 7649209 and contains counties [{'population': 372031}, {'population': 56231}, {'population': 84808}, {'population': 256526}, {'population': 91628}, {'population': 50123}, {'population': 32980}, {'population': 19798}, {'population': 46571}, {'population': 56794}, {'population': 29268}, {'population': 822779}, {'population': 620443}, {'population': 4731145}, {'population': 27402}, {'population': 350682}]
