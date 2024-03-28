@@ -1,0 +1,52 @@
+Set parameter MIPGap to value 0
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+
+CPU model: Apple M1 Pro
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 20337 rows, 39852 columns and 145398 nonzeros
+Model fingerprint: 0x61ab6d75
+Variable types: 33128 continuous, 6724 integer (6724 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 9e+05]
+  Objective range  [7e+05, 5e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 164 rows and 404 columns
+Presolve time: 0.32s
+Presolved: 20173 rows, 39448 columns, 144588 nonzeros
+Variable types: 32724 continuous, 6724 integer (6724 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.00s
+
+Solved with dual simplex
+
+Root relaxation: objective 1.504468e+10, 2360 iterations, 0.25 seconds (0.30 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.5045e+10    0    2          - 1.5045e+10      -     -    0s
+H    0     0                    1.514875e+10 1.5045e+10  0.69%     -    0s
+H    0     0                    1.507287e+10 1.5045e+10  0.19%     -    0s
+     0     0 1.5062e+10    0    2 1.5073e+10 1.5062e+10  0.07%     -    1s
+     0     0 infeasible    0      1.5073e+10 1.5073e+10  0.00%     -    1s
+
+Explored 1 nodes (2417 simplex iterations) in 1.15 seconds (1.11 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 2: 1.50729e+10 1.51487e+10 
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 1.507286590500e+10, best bound 1.507286590500e+10, gap 0.0000%
+
+The moment of inertia objective is 15072865905.0
+District 0 has population 729877 and contains counties [{'population': 31184}, {'population': 83343}, {'population': 27777}, {'population': 55813}, {'population': 28064}, {'population': 33208}, {'population': 33752}, {'population': 185314}, {'population': 9782}, {'population': 25008}, {'population': 18850}, {'population': 23863}, {'population': 34740}, {'population': 21815}, {'population': 12481}, {'population': 25971}, {'population': 12715}, {'population': 21390}, {'population': 6176}, {'population': 30985}, {'population': 7646}]
+District 1 has population 865237 and contains counties [{'population': 14209}, {'population': 11321}, {'population': 25949}, {'population': 26743}, {'population': 7785}, {'population': 227742}, {'population': 109145}, {'population': 1338}, {'population': 44722}, {'population': 3800}, {'population': 12016}, {'population': 28368}, {'population': 34907}, {'population': 40324}, {'population': 12720}, {'population': 9135}, {'population': 7260}, {'population': 8587}, {'population': 7675}, {'population': 157031}, {'population': 44922}, {'population': 29538}]
+District 2 has population 558300 and contains counties [{'population': 13266}, {'population': 17106}, {'population': 17000}, {'population': 17889}, {'population': 17714}, {'population': 21275}, {'population': 9998}, {'population': 9822}, {'population': 8246}, {'population': 21629}, {'population': 9926}, {'population': 16367}, {'population': 27990}, {'population': 15615}, {'population': 10285}, {'population': 29087}, {'population': 8988}, {'population': 51788}, {'population': 28339}, {'population': 58879}, {'population': 21291}, {'population': 18636}, {'population': 34180}, {'population': 72984}]
+District 3 has population 807865 and contains counties [{'population': 18340}, {'population': 67246}, {'population': 64222}, {'population': 78158}, {'population': 13884}, {'population': 24441}, {'population': 13530}, {'population': 19779}, {'population': 11511}, {'population': 24350}, {'population': 46053}, {'population': 208621}, {'population': 56145}, {'population': 143252}, {'population': 18333}]

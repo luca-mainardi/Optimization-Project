@@ -1,0 +1,71 @@
+Set parameter MIPGap to value 0
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+
+CPU model: Apple M1 Pro
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 29602 rows, 53757 columns and 199290 nonzeros
+Model fingerprint: 0x42f5a63d
+Variable types: 43956 continuous, 9801 integer (9801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+05]
+  Objective range  [4e+06, 4e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 203 rows and 446 columns
+Presolve time: 0.29s
+Presolved: 29399 rows, 53311 columns, 198389 nonzeros
+Variable types: 43510 continuous, 9801 integer (9801 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.04s
+
+Solved with dual simplex
+
+Root relaxation: objective 1.761534e+10, 4167 iterations, 0.65 seconds (1.09 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.7615e+10    0  180          - 1.7615e+10      -     -    1s
+H    0     0                    2.143661e+10 1.7615e+10  17.8%     -    1s
+H    0     0                    1.869958e+10 1.7615e+10  5.80%     -    1s
+H    0     0                    1.822737e+10 1.7615e+10  3.36%     -    2s
+     0     0 1.7683e+10    0  183 1.8227e+10 1.7683e+10  2.99%     -    2s
+     0     0 1.7683e+10    0  166 1.8227e+10 1.7683e+10  2.99%     -    2s
+     0     0 1.7752e+10    0  196 1.8227e+10 1.7752e+10  2.61%     -    3s
+H    0     0                    1.817414e+10 1.7752e+10  2.32%     -    3s
+     0     0 1.7756e+10    0   66 1.8174e+10 1.7756e+10  2.30%     -    3s
+     0     0 1.7813e+10    0  194 1.8174e+10 1.7813e+10  1.99%     -    3s
+     0     0 1.7813e+10    0  157 1.8174e+10 1.7813e+10  1.99%     -    3s
+H    0     0                    1.801158e+10 1.7813e+10  1.10%     -    3s
+     0     0 1.7813e+10    0  207 1.8012e+10 1.7813e+10  1.10%     -    3s
+     0     0 1.7813e+10    0   82 1.8012e+10 1.7813e+10  1.10%     -    3s
+H    0     0                    1.793917e+10 1.7813e+10  0.71%     -    3s
+H    0     0                    1.785958e+10 1.7813e+10  0.26%     -    3s
+
+Cutting planes:
+  Gomory: 1
+  Cover: 4
+  MIR: 1
+  Flow cover: 1
+  GUB cover: 1
+
+Explored 1 nodes (7745 simplex iterations) in 3.79 seconds (4.56 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 7: 1.78596e+10 1.79392e+10 1.80116e+10 ... 2.14366e+10
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 1.785957645200e+10, best bound 1.785957645200e+10, gap 0.0000%
+
+
+The moment of inertia objective is 17859576452.0
+District 0 has population 837102 and contains counties [{'population': 16548}, {'population': 4663}, {'population': 9748}, {'population': 22190}, {'population': 98537}, {'population': 492401}, {'population': 26715}, {'population': 37813}, {'population': 52403}, {'population': 33414}, {'population': 12317}, {'population': 7577}, {'population': 8634}, {'population': 6497}, {'population': 7645}]
+District 1 has population 797903 and contains counties [{'population': 12943}, {'population': 15039}, {'population': 10019}, {'population': 10795}, {'population': 18662}, {'population': 40105}, {'population': 16878}, {'population': 10565}, {'population': 15627}, {'population': 43127}, {'population': 9469}, {'population': 7443}, {'population': 12329}, {'population': 14334}, {'population': 17135}, {'population': 131144}, {'population': 20070}, {'population': 14061}, {'population': 19509}, {'population': 12012}, {'population': 17488}, {'population': 20565}, {'population': 230299}, {'population': 17043}, {'population': 25575}, {'population': 24988}, {'population': 10679}]
+District 2 has population 759787 and contains counties [{'population': 9597}, {'population': 36999}, {'population': 10330}, {'population': 93667}, {'population': 15211}, {'population': 3704}, {'population': 13127}, {'population': 14484}, {'population': 12138}, {'population': 7496}, {'population': 99678}, {'population': 9814}, {'population': 16525}, {'population': 7005}, {'population': 20760}, {'population': 9927}, {'population': 20823}, {'population': 5674}, {'population': 10623}, {'population': 11746}, {'population': 8771}, {'population': 25698}, {'population': 11658}, {'population': 105941}, {'population': 35872}, {'population': 14582}, {'population': 5896}, {'population': 6605}, {'population': 14182}, {'population': 9388}, {'population': 14828}, {'population': 8996}, {'population': 17703}, {'population': 8751}, {'population': 16384}, {'population': 6192}, {'population': 11934}, {'population': 7078}]
+District 3 has population 795577 and contains counties [{'population': 10033}, {'population': 16662}, {'population': 35437}, {'population': 22565}, {'population': 15663}, {'population': 20646}, {'population': 99266}, {'population': 9110}, {'population': 7203}, {'population': 18505}, {'population': 46460}, {'population': 19485}, {'population': 38910}, {'population': 33555}, {'population': 20482}, {'population': 10837}, {'population': 174669}, {'population': 43235}, {'population': 152854}]

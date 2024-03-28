@@ -1,0 +1,102 @@
+Set parameter MIPGap to value 0
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+
+CPU model: Apple M1 Pro
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 94342 rows, 192045 columns and 699104 nonzeros
+Model fingerprint: 0xc2133e59
+Variable types: 160716 continuous, 31329 integer (31329 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 8e+05]
+  Objective range  [4e+01, 3e+11]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 1e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 5448 rows and 5813 columns (presolve time = 5s) ...
+Presolve removed 5448 rows and 5813 columns (presolve time = 10s) ...
+Presolve removed 5448 rows and 8423 columns (presolve time = 15s) ...
+Presolve removed 12638 rows and 20706 columns
+Presolve time: 15.38s
+Presolved: 81704 rows, 171339 columns, 599242 nonzeros
+Variable types: 142968 continuous, 28371 integer (28371 binary)
+Found heuristic solution: objective 1.248391e+12
+Found heuristic solution: objective 2.190720e+11
+Found heuristic solution: objective 1.689516e+11
+Deterministic concurrent LP optimizer: primal simplex, dual simplex, and barrier
+Showing barrier log only...
+
+Root barrier log...
+
+Ordering time: 0.06s
+
+Barrier statistics:
+ Dense cols : 163
+ AA' NZ     : 5.147e+05
+ Factor NZ  : 2.633e+06 (roughly 120 MB of memory)
+ Factor Ops : 1.935e+08 (less than 1 second per iteration)
+ Threads    : 6
+
+                  Objective                Residual
+Iter       Primal          Dual         Primal    Dual     Compl     Time
+   0   4.43151881e+13 -1.24341572e+15  7.27e+02 1.54e+11  2.18e+10    16s
+   1   3.24596262e+13 -9.15727790e+14  4.47e+02 5.78e+10  1.24e+10    16s
+   2   1.29229707e+13 -5.10957145e+14  2.21e+02 2.76e+07  5.86e+09    17s
+   3   4.84887926e+11 -8.76882484e+13  2.87e+00 2.25e-02  2.72e+08    17s
+   4   3.04131313e+11 -3.77256979e+12  3.57e-01 2.69e-03  1.52e+07    17s
+   5   2.56511545e+11 -1.21989136e+12  4.28e-02 1.34e-02  4.14e+06    17s
+   6   2.26761253e+11  1.09146537e+11  9.10e-03 2.09e-05  3.31e+05    17s
+   7   1.69936796e+11  1.56413408e+11  1.46e-04 1.89e-03  3.47e+04    17s
+   8   1.64408868e+11  1.62538167e+11  3.35e-06 1.62e-03  4.74e+03    17s
+   9   1.63452351e+11  1.63242683e+11  6.51e-07 4.18e-03  5.32e+02    17s
+  10   1.63335157e+11  1.63326582e+11  5.88e-08 1.72e-05  2.18e+01    17s
+  11   1.63327022e+11  1.63327013e+11  5.84e-11 1.53e-04  2.18e-02    17s
+  12   1.63327014e+11  1.63327014e+11  9.60e-11 1.50e-05  2.18e-05    17s
+  13   1.63327014e+11  1.63327014e+11  2.70e-13 1.48e-05  2.18e-08    17s
+  14   1.63327014e+11  1.63327014e+11  1.69e-12 3.97e-04  2.18e-11    17s
+
+Barrier solved model in 14 iterations and 17.41 seconds (24.06 work units)
+Optimal objective 1.63327014e+11
+
+
+Root crossover log...
+
+   81084 DPushes remaining with DInf 2.8759241e-06                17s
+       0 DPushes remaining with DInf 3.9994717e-05                18s
+
+     713 PPushes remaining with PInf 0.0000000e+00                18s
+       0 PPushes remaining with PInf 0.0000000e+00                18s
+
+  Push phase complete: Pinf 0.0000000e+00, Dinf 2.2256439e-05     18s
+
+
+Root simplex log...
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+   72299    1.6332701e+11   0.000000e+00   2.166629e-05     18s
+   72652    1.6332701e+11   0.000000e+00   0.000000e+00     18s
+Concurrent spin time: 0.00s
+
+Solved with barrier
+   72873    1.6332701e+11   0.000000e+00   0.000000e+00     18s
+Extra simplex iterations after uncrush: 221
+
+Root relaxation: objective 1.633270e+11, 72873 iterations, 2.33 seconds (3.35 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+*    0     0               0    1.633270e+11 1.6333e+11  0.00%     -   18s
+
+Explored 1 nodes (72873 simplex iterations) in 18.30 seconds (25.98 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 4: 1.63327e+11 1.68952e+11 2.19072e+11 1.24839e+12 
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 1.633270136580e+11, best bound 1.633270136580e+11, gap 0.0000%
+
+The moment of inertia objective is 163327013658.0
+District 0 has population 733391 and contains counties [{'population': 2374}, {'population': 484}, {'population': 3782}, {'population': 5182}, {'population': 4391}, {'population': 5880}, {'population': 4128}, {'population': 7354}, {'population': 5621}, {'population': 3020}, {'population': 3830}, {'population': 4671}, {'population': 2193}, {'population': 1975}, {'population': 5702}, {'population': 2007}, {'population': 7887}, {'population': 2607}, {'population': 700}, {'population': 1741}, {'population': 7636}, {'population': 7470}, {'population': 3227}, {'population': 7653}, {'population': 4592}, {'population': 6725}, {'population': 2276}, {'population': 2124}, {'population': 4279}, {'population': 5876}, {'population': 4814}, {'population': 4003}, {'population': 214}, {'population': 7022}, {'population': 6560}, {'population': 7424}, {'population': 5746}, {'population': 6434}, {'population': 5}, {'population': 5379}, {'population': 5035}, {'population': 6519}, {'population': 9027}, {'population': 8359}, {'population': 4796}, {'population': 5720}, {'population': 4135}, {'population': 2503}, {'population': 2113}, {'population': 2617}, {'population': 1345}, {'population': 4695}, {'population': 1086}, {'population': 2894}, {'population': 2127}, {'population': 4414}, {'population': 71}, {'population': 1562}, {'population': 2069}, {'population': 1456}, {'population': 5692}, {'population': 1071}, {'population': 1619}, {'population': 3420}, {'population': 1476}, {'population': 4254}, {'population': 6140}, {'population': 3906}, {'population': 8368}, {'population': 1708}, {'population': 4691}, {'population': 5621}, {'population': 5025}, {'population': 5885}, {'population': 5215}, {'population': 5650}, {'population': 2080}, {'population': 2365}, {'population': 5212}, {'population': 3283}, {'population': 1240}, {'population': 4470}, {'population': 2632}, {'population': 975}, {'population': 4939}, {'population': 662}, {'population': 3749}, {'population': 2928}, {'population': 3686}, {'population': 4742}, {'population': 2931}, {'population': 5555}, {'population': 5435}, {'population': 6119}, {'population': 6814}, {'population': 4759}, {'population': 5090}, {'population': 6986}, {'population': 2716}, {'population': 3824}, {'population': 4191}, {'population': 4940}, {'population': 3158}, {'population': 3942}, {'population': 5165}, {'population': 6111}, {'population': 6824}, {'population': 6817}, {'population': 4593}, {'population': 4903}, {'population': 2647}, {'population': 4947}, {'population': 4928}, {'population': 6312}, {'population': 4328}, {'population': 6384}, {'population': 3582}, {'population': 3413}, {'population': 4318}, {'population': 7421}, {'population': 1657}, {'population': 2168}, {'population': 5080}, {'population': 4641}, {'population': 3039}, {'population': 3873}, {'population': 3315}, {'population': 4934}, {'population': 3367}, {'population': 2730}, {'population': 1478}, {'population': 4370}, {'population': 2494}, {'population': 3459}, {'population': 957}, {'population': 3398}, {'population': 6325}, {'population': 10885}, {'population': 2505}, {'population': 1563}, {'population': 4709}, {'population': 4582}, {'population': 2467}, {'population': 3244}, {'population': 9798}, {'population': 1348}, {'population': 5630}, {'population': 6743}, {'population': 4094}, {'population': 3753}, {'population': 5010}, {'population': 4716}, {'population': 2723}, {'population': 4442}, {'population': 5255}, {'population': 6002}, {'population': 5700}, {'population': 2776}, {'population': 4658}, {'population': 5097}, {'population': 1611}, {'population': 5565}, {'population': 3230}, {'population': 844}, {'population': 978}, {'population': 2352}, {'population': 5983}, {'population': 5148}, {'population': 7064}, {'population': 5228}, {'population': 952}, {'population': 2032}, {'population': 1673}, {'population': 6833}, {'population': 3102}, {'population': 4372}, {'population': 2051}]

@@ -1,0 +1,50 @@
+Set parameter MIPGap to value 0
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+
+CPU model: Apple M1 Pro
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 5897 rows, 10912 columns and 39940 nonzeros
+Model fingerprint: 0x0a81dfc8
+Variable types: 8976 continuous, 1936 integer (1936 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [2e+06, 2e+11]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 174 rows and 289 columns
+Presolve time: 0.07s
+Presolved: 5723 rows, 10623 columns, 39232 nonzeros
+Variable types: 8687 continuous, 1936 integer (1936 binary)
+
+Root relaxation: objective 6.720806e+10, 1230 iterations, 0.04 seconds (0.06 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 6.7208e+10    0    2          - 6.7208e+10      -     -    0s
+H    0     0                    7.248426e+10 6.7208e+10  7.28%     -    0s
+H    0     0                    7.240207e+10 6.7208e+10  7.17%     -    0s
+     0     0     cutoff    0      7.2402e+10 7.2402e+10  0.00%     -    0s
+
+Cutting planes:
+  Cover: 2
+  Flow cover: 7
+  GUB cover: 3
+  RLT: 3
+  Relax-and-lift: 1
+
+Explored 1 nodes (1455 simplex iterations) in 0.30 seconds (0.32 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 2: 7.24021e+10 7.24843e+10 
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 7.240207474100e+10, best bound 7.240207474100e+10, gap 0.0000%
+
+The moment of inertia objective is 72402074741.0
+District 0 has population 901753 and contains counties [{'population': 7974}, {'population': 790}, {'population': 4275}, {'population': 2574}, {'population': 11913}, {'population': 231105}, {'population': 28666}, {'population': 24655}, {'population': 4564}, {'population': 90046}, {'population': 24237}, {'population': 7878}, {'population': 24272}, {'population': 21613}, {'population': 87018}, {'population': 14194}, {'population': 13388}, {'population': 30891}, {'population': 52913}, {'population': 11630}, {'population': 7027}, {'population': 47992}, {'population': 15598}, {'population': 5127}, {'population': 1077}, {'population': 6372}, {'population': 123964}]
+District 1 has population 937353 and contains counties [{'population': 16541}, {'population': 11746}, {'population': 494967}, {'population': 7610}, {'population': 19123}, {'population': 8734}, {'population': 13169}, {'population': 3533}, {'population': 39517}, {'population': 42090}, {'population': 25386}, {'population': 10500}, {'population': 171362}, {'population': 9530}, {'population': 47110}, {'population': 4379}, {'population': 12056}]

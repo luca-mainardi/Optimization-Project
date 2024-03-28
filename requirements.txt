@@ -1,1 +1,4 @@
 gurobipy
+gerrychain
+geopandas
+networkx

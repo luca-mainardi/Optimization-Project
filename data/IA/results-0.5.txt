@@ -1,0 +1,54 @@
+Set parameter MIPGap to value 0
+Gurobi Optimizer version 11.0.1 build v11.0.1rc0 (mac64[arm] - Darwin 23.3.0 23D60)
+
+CPU model: Apple M1 Pro
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+
+Optimize a model with 29602 rows, 53757 columns and 199290 nonzeros
+Model fingerprint: 0x453076cd
+Variable types: 43956 continuous, 9801 integer (9801 binary)
+Coefficient statistics:
+  Matrix range     [1e+00, 1e+06]
+  Objective range  [4e+06, 4e+10]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 4e+00]
+Warning: Model contains large objective coefficients
+         Consider reformulating model or setting NumericFocus parameter
+         to avoid numerical issues.
+Presolve removed 198 rows and 444 columns
+Presolve time: 0.43s
+Presolved: 29404 rows, 53313 columns, 198396 nonzeros
+Variable types: 43512 continuous, 9801 integer (9801 binary)
+Deterministic concurrent LP optimizer: primal and dual simplex
+Showing primal log only...
+
+Concurrent spin time: 0.01s
+
+Solved with dual simplex
+
+Root relaxation: objective 1.544509e+10, 3341 iterations, 0.40 seconds (0.60 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1.5445e+10    0  129          - 1.5445e+10      -     -    1s
+H    0     0                    1.574595e+10 1.5445e+10  1.91%     -    1s
+H    0     0                    1.569855e+10 1.5445e+10  1.61%     -    1s
+H    0     0                    1.556019e+10 1.5445e+10  0.74%     -    1s
+     0     0 1.5544e+10    0    4 1.5560e+10 1.5544e+10  0.10%     -    1s
+     0     0 1.5553e+10    0    1 1.5560e+10 1.5553e+10  0.05%     -    1s
+     0     0 1.5554e+10    0    1 1.5560e+10 1.5554e+10  0.04%     -    1s
+
+Explored 1 nodes (3458 simplex iterations) in 1.95 seconds (2.06 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 3: 1.55602e+10 1.56985e+10 1.57459e+10 
+
+Optimal solution found (tolerance 0.00e+00)
+Best objective 1.556018881100e+10, best bound 1.556018881100e+10, gap 0.0000%
+
+The moment of inertia objective is 15560188811.0
+District 0 has population 995555 and contains counties [{'population': 3704}, {'population': 12138}, {'population': 16548}, {'population': 4663}, {'population': 9748}, {'population': 7496}, {'population': 35437}, {'population': 22190}, {'population': 98537}, {'population': 492401}, {'population': 26715}, {'population': 37813}, {'population': 52403}, {'population': 99678}, {'population': 33414}, {'population': 12317}, {'population': 7577}, {'population': 8634}, {'population': 6497}, {'population': 7645}]
+District 1 has population 601417 and contains counties [{'population': 12943}, {'population': 9597}, {'population': 15039}, {'population': 10019}, {'population': 10795}, {'population': 18662}, {'population': 40105}, {'population': 16878}, {'population': 10565}, {'population': 15627}, {'population': 43127}, {'population': 9469}, {'population': 7443}, {'population': 12329}, {'population': 14334}, {'population': 17135}, {'population': 131144}, {'population': 20070}, {'population': 14061}, {'population': 19509}, {'population': 12012}, {'population': 17488}, {'population': 20565}, {'population': 17043}, {'population': 25575}, {'population': 24988}, {'population': 9388}, {'population': 14828}, {'population': 10679}]
+District 2 has population 602958 and contains counties [{'population': 36999}, {'population': 10330}, {'population': 93667}, {'population': 15211}, {'population': 13127}, {'population': 14484}, {'population': 9814}, {'population': 16525}, {'population': 7005}, {'population': 20760}, {'population': 9927}, {'population': 20823}, {'population': 5674}, {'population': 10623}, {'population': 11746}, {'population': 8771}, {'population': 25698}, {'population': 11658}, {'population': 105941}, {'population': 35872}, {'population': 14582}, {'population': 5896}, {'population': 6605}, {'population': 14182}, {'population': 8996}, {'population': 17703}, {'population': 8751}, {'population': 16384}, {'population': 6192}, {'population': 11934}, {'population': 7078}]
+District 3 has population 990439 and contains counties [{'population': 10033}, {'population': 16662}, {'population': 22565}, {'population': 15663}, {'population': 20646}, {'population': 99266}, {'population': 230299}, {'population': 9110}, {'population': 7203}, {'population': 18505}, {'population': 46460}, {'population': 19485}, {'population': 38910}, {'population': 33555}, {'population': 20482}, {'population': 10837}, {'population': 174669}, {'population': 43235}, {'population': 152854}]
